@@ -29,8 +29,8 @@ public class ChangesHandler implements EventHandler {
 
     @Override
     public void onMessage(String str, MessageEvent messageEvent) throws Exception {
-        LOGGER.info(String.format("Received message -> %s: ", messageEvent.getData()));
-        kafkaTemplate.send(topic, str);
+        LOGGER.info(String.format("Produced message sent -> %s: ", messageEvent.getData()));
+        kafkaTemplate.send(topic, messageEvent.getData());
     }
 
     @Override
