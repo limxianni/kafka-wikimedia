@@ -34,19 +34,7 @@ To set up Kafka, follow these steps:
     bin/kafka-server-start.sh config/server.properties
     ```
 
-7. After running the API below, you can check Consumer message by opening a new tab in your terminal and run the following command:
-
-    Windows:
-    ```
-    .\bin\windows\kafka-console-consumer.bat --topic demo_json --from-beginning --bootstrap-server localhost:9092
-    ```
-
-    MacOS:
-    ```
-    bin/kafka-server-start.sh --topic demo_json --from-beginning --bootstrap-server localhost:9092
-    ```
-
-8. DO TAKE NOTE: Always start Zookeeper first, followed by Kafka.
+5. DO TAKE NOTE: Always start Zookeeper first, followed by Kafka.
 
 ## Running the project
 
@@ -54,21 +42,21 @@ To set up Kafka, follow these steps:
 ```
 kafka-consumer-database/
 ├── src/
-├── .env #(Here)
+├── .env
 ├── pom.xml
 ```
-The database name is `wikimedia` and table name is `wikimedia_data`.
+- The database name is `wikimedia` and table name is `wikimedia_data`.
 
 2. Run both producer and consumer to see results.
 
-Logger by Kafka Producer:
+- Logger by Kafka Producer:
 
 ![alt text](<output producer.png>)
 
-Logger by Kafka Consumer:
+- Logger by Kafka Consumer:
 
 ![alt text](<output consumer.png>)
 
-You should be able to see rows of data created in your table.
+- You should be able to view rows of data inserted in your table.
 
 ![alt text](<output database.png>)
