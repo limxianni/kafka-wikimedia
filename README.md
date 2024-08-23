@@ -1,6 +1,6 @@
 ## Kafka using broker architecture
 
-![alt text](<Blank diagram.png>)
+![alt text](<architecture concept diagram.png>)
 
 ## Setting up Kafka in your local environment
 
@@ -51,22 +51,24 @@ To set up Kafka, follow these steps:
 ## Running the project
 
 1. Make sure to configure your own database url and username using .env file.
-
+```
 kafka-consumer-database/
 ├── src/
-├── .env *(Here)*
+├── .env #(Here)
 ├── pom.xml
-
+```
 The database name is `wikimedia` and table name is `wikimedia_data`.
 
 2. Run both producer and consumer to see results.
 
 Logger by Kafka Producer:
 
-![alt text](image.png)
+![alt text](<output producer.png>)
 
 Logger by Kafka Consumer:
 
-![alt text](image-1.png)
+![alt text](<output consumer.png>)
 
 You should be able to see rows of data created in your table.
+
+![alt text](<output database.png>)
