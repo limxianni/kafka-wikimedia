@@ -39,13 +39,14 @@ To set up Kafka, follow these steps:
 ## Running the project
 
 1. Make sure to configure your own database url and username using .env file.
-```
+`
 kafka-consumer-database/
 ├── src/
 ├── .env
 ├── pom.xml
-```
+`
 - The database name is `wikimedia` and table name is `wikimedia_data`.
+
 
 2. Run both producer and consumer to see results.
 
